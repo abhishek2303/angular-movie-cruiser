@@ -1,0 +1,14 @@
+
+
+<div *ngIf="movies">
+  <p>
+    display-movies works!
+  </p>
+  
+  <ul>
+    <li *ngFor = "let movie of movies" >
+      {{movie.title}} {{movie.overview}}
+      <a [routerLink]="['/movie', movie.id]">Overview</a>
+    </li>
+  </ul>
+</div>

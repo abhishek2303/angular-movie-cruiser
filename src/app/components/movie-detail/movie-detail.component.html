@@ -1,0 +1,11 @@
+<p>
+  movie-detail works!
+</p>
+
+{{movie.title}}
+
+<div *ngIf="movie">
+  {{movie.id}} {{movie.title}} {{movie.overview}}
+</div>
+
+<button (click)="goBack()">Back</button>

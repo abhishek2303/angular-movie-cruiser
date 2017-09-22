@@ -1,0 +1,14 @@
+
+<input name="search" #searchTerm placeholder="search">
+
+<button (click)="performSearch(searchTerm.value)">Search</button> <br>
+
+<app-display-movies [movies] = "this.search_res"></app-display-movies>
+
+<!-- <div *ngIf="search_res">
+    <ul>
+        <li *ngFor='let movie of search_res; let i=index'>
+            {{movie.title}} : <a [routerLink]="['/movie', movie.id]" (click)=>Overview</a>
+        </li>
+    </ul>
+</div> -->
